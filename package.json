@@ -1,5 +1,5 @@
 {
-  "name": "chat-social",
+  "name": "chat-socialapp",
   "version": "1.0.0",
   "description": "Real-time chat app with node.js, express.js and socket.io",
   "main": "index.js",
@@ -9,21 +9,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manutrepant/chat-social.git"
+    "url": "git+https://github.com/julio-34727/chat-socialapp.git"
   },
   "keywords": [
+    "real-time",
+    "app",
     "chat",
     "node.js",
     "express.js",
     "socket.io",
-    "social"
+    "js",
+    "css",
+    "html"
   ],
   "author": "Julio, Jeason and Emmanuel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/manutrepant/chat-social/issues"
+    "url": "https://github.com/julio-34727/chat-socialapp/issues"
   },
-  "homepage": "https://github.com/manutrepant/chat-social#readme",
+  "homepage": "https://github.com/julio-34727/chat-socialapp#readme",
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.17.1",

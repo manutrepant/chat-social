@@ -1,2 +1,2 @@
-# chat-social
-Real Time Chat Social with NodeJs, Express, and socket.io
+# chat-socialapp
+Real-time chat app with node.js, express.js and socket.io
