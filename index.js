@@ -1,7 +1,6 @@
 /* MODULES */
 const express = require('express')
 const path = require('path')
-const io = require('socket.io')(server)
 const app = express()
 
 /* GLOBAL CONSTANTES */
@@ -17,10 +16,17 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-/* LISTEN */
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
-
 /* SOCKET.io */
-// io.on('connect', (socket) => {
-//     console.log('New user connected (server side')
-// })
+const server = app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
+const io = require('socket.io')(server)
+
+io.on('connect', (socket) => {
+    console.log('New user connected (server side')
+
+    socket.on('disconnect', () => {
+        console.log('User disconnect (server side')
+    })
+
+    
+
+})
