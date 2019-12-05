@@ -8,6 +8,12 @@
   margin-left: 0;
 }
 
+.verticalAlign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 html,
 body {
   font-family: "arial", sans-serif;
@@ -26,12 +32,60 @@ body {
   border-radius: 8px;
 }
 
+.fit-logo {
+  height: 100px;
+}
+
+.verticalAlign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinUs {
+  background: #f0f0f0;
+  background: linear-gradient(360deg, rgba(255, 255, 255, 1) 0%, rgba(236, 239, 241, 1) 100%);
+  margin: 25px;
+  box-shadow: 4px 4px 4px 0px rgba(146, 104, 104, 0.2);
+  width: 370px;
+  border-radius: 8px;
+}
+
+.logDiv {
+  padding: 25px;
+}
+
 .headerChat {
   background-color: white;
 }
 
+header {
+  height: 40px;
+  text-align: center;
+  background-color: #24a4e4;
+  border-bottom: #206e96 1px solid;
+  font-size: 12px;
+  color: white;
+  line-height: 40px;
+}
+
+footer {
+  height: 40px;
+  text-align: center;
+  background-color: #24a4e4;
+  border-top: #206e96 1px solid;
+  font-size: 12px;
+  color: white;
+  line-height: 40px;
+}
+
 .pictoEd {
   padding: 0 10px 0 10px;
+}
+
+.row20px {
+  padding: 10px 0 10px 0;
+  text-align: left;
 }
 
 .headerBurger {
@@ -43,11 +97,10 @@ body {
 }
 
 .chating {
-  background-color: #24a4e4;
   padding: 1px 4px;
   border-radius: 2px;
-  color: #fff;
-  font-size: 14px;
+  color: #24a4e4;
+  font-size: 18px;
 }
 
 .container-fluid {
@@ -148,15 +201,48 @@ body {
   color: #373c41;
 }
 
+.bienvenue {
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
 input,
 select,
 textarea {
   border-radius: 4px;
   border-color: #24a4e4;
+  background-color: white;
   width: 100%;
+  height: 32px;
   font-size: 12px;
   font-style: italic;
   color: black;
+}
+
+select {
+  background-color: white;
+}
+
+/* Hover quand selection de select */
+select:hover {
+  background-color: #cfe4ee;
+}
+
+/* Hover sur bouton */
+.btn-outline-secondary:hover {
+  background-color: #176e99;
+  ;
+}
+
+label {
+  text-align: left;
+  font-size: 12px;
+  color: black;
+  font-style: italic;
+  color: #176e99;
+
 }
 
 .btn-outline-secondary {
@@ -170,7 +256,6 @@ textarea {
 
 .icones {
   height: 50px;
-  /* line-height: 50px; */
   text-align: left;
   box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.09);
 }
@@ -180,3 +265,20 @@ i {
   color: #24a4e4;
   font-size: 18px;
 }
+
+/* Triangle CSS */
+/* .sidebar-resources-categories {} */
+
+/* .sidebar-resources-categories::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border: 1px;
+  border-left: 0px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #a9e915;
+  clear: both;
+} */
