@@ -1,7 +1,7 @@
 /* Visualiser ma construction */
-div {
+/* div {
   border: 1px black solid;
-}
+} */
 
 .no-gutters {
   margin-right: 0;
@@ -39,8 +39,7 @@ body {
 
 .fit-logo {
   height: 80px;
-  width: 120px;
-  background-color: #7cfc00;
+  width: 110px;
 }
 
 .logo {
