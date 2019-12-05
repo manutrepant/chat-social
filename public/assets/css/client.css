@@ -1,0 +1,395 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+/* COLORS */
+/* RESET CSS */
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button * {
+  pointer-events: none;
+}
+
+/* BODY BLOCKS DESIGN */
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(350px, 1fr);
+      grid-template-columns: minmax(350px, 1fr);
+  -ms-grid-rows: minmax(50px, auto) 1fr minmax(50px, auto);
+      grid-template-rows: minmax(50px, auto) 1fr minmax(50px, auto);
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #303080;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333744;
+  color: #f5f5f5;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+}
+
+main .container {
+  display: -ms-grid;
+  display: grid;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+main .container #login {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .container #chat {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto 1fr;
+      grid-template-rows: auto auto 1fr;
+  grid-gap: 0.25rem;
+}
+
+main .container #chat #chatroom {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+/* HAMBURGER ICON */
+.line {
+  display: block;
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #f5f5f5;
+}
+
+.change .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* LOGO */
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+}
+
+.navbar-brand--logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.navbar-brand--title {
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  color: orange;
+}
+
+/* NAVIGATION */
+.nav-items {
+  margin-left: auto;
+}
+
+.nav-link {
+  letter-spacing: 1px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  text-align: left;
+}
+
+.nav-link:not(.nav-link--active) {
+  color: #f5f5f5;
+}
+
+.nav-link--active, .nav-link:hover {
+  color: orange;
+}
+
+.nav-link::after {
+  display: block;
+  content: "";
+  height: 1rem;
+  border-bottom: 3px solid orange;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.nav-link:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* CARD BLOCKS DESIGN */
+.card {
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.form-group--avatar img {
+  width: 25%;
+  border-radius: 50%;
+  margin: 0.5rem auto;
+}
+
+.form-group--login, .form-group--msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.form-group--login .btn, .form-group--msg .btn {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  background-color: #333744;
+  color: #fff;
+  text-transform: uppercase;
+  min-width: 100px;
+}
+
+.form-group--msg textarea {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 0.90rem;
+}
+
+/* CHATROOM */
+.card-user {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.posts {
+  position: relative;
+  overflow-y: scroll;
+  height: calc(100vh - 400px);
+  padding: 1rem 0 1rem 1rem;
+}
+
+.scrollbar-pink::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #ec407a;
+  border-radius: 10px;
+}
+
+.scrollbar-pink::-webkit-scrollbar {
+  width: 12px;
+  background-color: #ec407a;
+}
+
+.bordered-pink::-webkit-scrollbar-track {
+  border: 1px solid #ec407a;
+}
+
+.bordered-pink::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post > * {
+  margin-right: 1rem;
+}
+
+.post-img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.post--me .post-body {
+  background-color: #24a4e4;
+  position: relative;
+}
+
+.post--me .post-body::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 0.5em solid #24a4e4;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  left: -1em;
+  top: 2em;
+}
+
+.post--you .post-body {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  background-color: #7cfc00;
+  position: relative;
+}
+
+.post--you .post-body::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 0.5em solid #7cfc00;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  right: -1em;
+  top: 2em;
+}
+
+.post-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.post-info {
+  background-color: #fff;
+}
+
+.post-author {
+  font-weight: bold;
+  font-size: 0.80rem;
+  text-transform: uppercase;
+}
+
+.post-msg {
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.post .fa-clock {
+  font-size: 0.80rem;
+}
+
+.post p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  font-size: 0.90rem;
+  color: #421818 !important;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  #chat {
+    -ms-grid-columns: auto 1fr auto;
+        grid-template-columns: auto 1fr auto;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  #chat #team {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+/*# sourceMappingURL=client.css.map */

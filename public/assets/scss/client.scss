@@ -1,0 +1,254 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* COLORS */
+$body-bgcolor: #f5f5f5;
+$header-bgcolor: #303080;
+$footer-bgcolor: #333744;
+$footer-color: #f5f5f5;
+$logo-title-color: orange;
+$navlink-color: #f5f5f5;
+$navlink-color-active: orange;
+$card-header-bgcolor: #fff;
+$btn-login-bgcolor: #333744;
+
+
+/* RESET CSS */
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+button * {pointer-events: none;}
+
+/* BODY BLOCKS DESIGN */
+html {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    display: grid;
+    grid-template-columns: minmax(350px, 1fr);
+    grid-template-rows: minmax(50px, auto) 1fr minmax(50px, auto);
+    min-height: 100vh;
+    background-color: $body-bgcolor;
+}
+header {background-color: $header-bgcolor;}
+footer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: $footer-bgcolor;
+    color: $footer-color;
+}
+main {
+    display: grid;
+    .container {
+        display: grid;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        #login {
+            justify-self: center;;
+            align-self: center;
+        }
+        #chat {
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            grid-gap: 0.25rem;
+            #chatroom {order: 1;}
+        }
+    }
+}
+
+/* HAMBURGER ICON */
+.line {
+    display: block;
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.4s;
+    background-color: $navlink-color;
+}
+.change .line1 {transform: rotate(-45deg) translate(-5px, 6px);}
+.change .line2 {opacity: 0;}
+.change .line3 {transform: rotate(45deg) translate(-5px, -6px);}
+
+/* LOGO */
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    &--logo {
+        width: 50px;
+        border-radius: 50%;
+    }
+    &--title {
+        font-family: cursive;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 0.5rem;
+        color: $logo-title-color;
+    }
+}
+
+/* NAVIGATION */
+.nav-items {margin-left: auto;}
+.nav-link {
+    letter-spacing: 1px;
+    transition: color 0.5s;
+    text-align: left;
+    &:not(.nav-link--active) {color: $navlink-color;}
+    &--active, &:hover {color: $navlink-color-active;}
+    &::after {
+        display: block;
+        content: "";
+        height: 1rem;;
+        border-bottom: 3px solid $navlink-color-active;
+        transform: scaleX(0);
+        transform-origin: 0% 50%;
+        transition: transform 0.25s ease-in-out;
+    }
+    &:hover::after {transform: scaleX(1);}
+}
+/* CARD BLOCKS DESIGN */
+.card {
+    padding: 1rem 1rem 0rem 1rem;
+    &-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        background-color: $card-header-bgcolor;
+    }
+    &-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+}
+.form-group--avatar img {
+    width: 25%;
+    border-radius: 50%;
+    margin: 0.5rem auto;
+}
+.form-group--login, .form-group--msg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.form-group--login .btn, .form-group--msg .btn {
+    grid-column-start: 2;
+    background-color: $btn-login-bgcolor;
+    color: #fff;
+    text-transform: uppercase;
+    min-width: 100px;
+}
+.form-group--msg textarea {
+    flex: 1;
+    font-size: 0.90rem;
+}
+
+/* CHATROOM */
+.card-user {
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.posts {
+    position: relative;
+    overflow-y: scroll;
+    height: calc(100vh - 400px);
+    padding: 1rem 0 1rem 1rem;
+}
+.scrollbar-pink::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #ec407a;
+    border-radius: 10px; 
+}
+.scrollbar-pink::-webkit-scrollbar {
+    width: 12px;
+    background-color: #ec407a; 
+}
+.bordered-pink::-webkit-scrollbar-track {border: 1px solid #ec407a;}
+.bordered-pink::-webkit-scrollbar-thumb {box-shadow: none;}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    > *  {margin-right: 1rem;}
+    &-img {
+        width: 50px;
+        border-radius: 50%;
+    }
+    &--me {
+        .post-body {
+            background-color: #24a4e4;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border: 0.5em solid #24a4e4;
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+                left: -1em;
+                top: 2em;
+            }
+        }
+    }
+    &--you {
+        .post-body {
+            order: -1;
+            background-color: #7cfc00;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border: 0.5em solid #7cfc00;
+                border-bottom-color: transparent;
+                border-right-color: transparent;
+                right: -1em;
+                top: 2em;
+            }
+        }
+    }
+    &-body {flex: 1;}
+    &-info {background-color: #fff;}
+    &-author {
+        font-weight: bold;
+        font-size: 0.80rem;
+        text-transform: uppercase;
+    }
+    &-msg {padding: 0 0.5rem 0.5rem 0.5rem;}
+    .fa-clock {font-size: 0.80rem;}
+    p {
+        text-align: justify;
+        hyphens: auto;
+        font-size: 0.90rem;
+        color: #421818 !important;
+    }
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    #chat {
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: 1fr;
+        align-items: stretch;
+        #team {order: 1;}
+    }
+}
