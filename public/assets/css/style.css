@@ -1,0 +1,227 @@
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Visualiser ma construction */
+/* div {
+	border: 1px black solid;
+} */
+
+html,
+body {
+  /* background-color: white; */
+  font-family: "arial", sans-serif;
+  background-image: url("../img/motif.jpg");
+  background-position: center;
+  /* background-repeat: no-repeat; */
+}
+
+header {
+  background-color: #78909c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 0;
+}
+
+main {
+  background-color: white;
+  margin-top: 0;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 125px;
+  padding: 25px;
+  box-shadow: 4px 4px 4px 0px rgba(146, 104, 104, 0.2);
+  width: 450px;
+  /* border: 1px solid #212529; */
+}
+
+.entete {
+  text-align: center;
+}
+
+input,
+select,
+textarea,
+button {
+  border-radius: 4px;
+  height: 60px;
+  width: 100%;
+  box-shadow: 4px 4px 4px 0px rgba(146, 104, 104, 0.2);
+}
+
+.designButton {
+  background-color: lawngreen;
+  font-size: 12px;
+}
+
+div.horizontal {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: "arial", sans-serif;
+  color: #303030;
+  font-size: 2em;
+}
+
+p {
+  font-family: "arial", sans-serif;
+}
+
+.ombre {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Avatar par défaut */
+
+.divAvatarMoi {
+  background-color: green;
+  height: 72px;
+  width: 72px;
+}
+
+/* Avatar Lui */
+.divAvatarLui {
+  background-color: red;
+  height: 72px;
+  width: 72px;
+}
+
+/* Post Moi, Lui défaut */
+.postMoi,
+.postLui {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Post Lui */
+.postLui {
+  background-color: yellowgreen;
+  color: #26420b;
+  text-align: right;
+}
+
+/* Post Moi */
+.postMoi {
+  color: rgb(36, 28, 56);
+  text-align: left;
+
+  /* text-shadow: 0px -1px 0px #fff; */
+}
+
+.zoneTextarea {
+  padding: 10px;
+}
+
+.fit-picture {
+  border-radius: 50%;
+  height: 72px;
+  width: 72px;
+}
+
+.avatar {
+  width: 75px;
+  height: 75px;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+.onLine {
+  font-size: 10px;
+}
+
+.log {
+  text-align: right;
+}
+.avatarOnline {
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+}
+
+button {
+  background-color: rgb(229, 238, 250);
+  width: 100%;
+  color: #212529;
+  border-radius: 5px;
+  width: 100%;
+}
+
+footer {
+  background-color: #24a4e4;
+  color: #303030;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 250px;
+}
+
+.rLeft {
+  padding-left: 20px;
+}
+
+.rRight {
+  padding-right: 20px;
+}
+
+.separator {
+  height: 20px;
+}
+
+.icons {
+  height: 50px;
+  line-height: 50px;
+}
+
+i {
+  color: grey;
+  font-size: 28px;
+  margin: 10px;
+}
+
+.avatarMoi {
+  width: 75px;
+}
+
+.avatarLui {
+  width: 75px;
+  margin-left: 320px;
+  position: relative;
+}
+
+.postLui {
+  width: 300px;
+  background-color: #3cafea;
+  padding: 6px;
+  position: relative;
+  margin-top: -75px;
+}
+
+.postMoi {
+  width: 300px;
+  background-color: lawngreen;
+  position: relative;
+  margin-left: 80px;
+  margin-top: -75px;
+  padding: 6px;
+}
+
+.containerPost {
+  border: solid 1px red;
+}
