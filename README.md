@@ -22,10 +22,10 @@ Technologies utilisées :
 * bootstrap
 
 ##Intervenants : 
-Emmanuel Trépant : https://github.com/manutrepant/chat-social
-Julio Zinga : https://github.com/julio-34727
-Jyson : https://github.com/bleaz01
-Kiza : https://github.com/Kiza-coder
+* Emmanuel Trépant : https://github.com/manutrepant/chat-social
+* Julio Zinga : https://github.com/julio-34727
+* Jyson : https://github.com/bleaz01
+* Kiza : https://github.com/Kiza-coder
 
 ## Descriptif du travail de chaque intervenant :
 ### Emmanuel Trépant :
@@ -48,5 +48,5 @@ Kiza : https://github.com/Kiza-coder
 * Projet non terminé (les petits microbes ont eu raison des plus forts)
 
 
-# chat-socialapp
-Real-time chat app with node.js, express.js and socket.io
+
+
