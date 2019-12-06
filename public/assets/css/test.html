@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Real-time chat app with node.js, express.js and socket.io" />
+    <meta name="keywords" content="chat, real-time, node.js, express.js, socket.io, js, css, html" />
+    <meta name="author" content="Julio ZINGA, Jeason Reaguelle, Emmanuel Treppant" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="assets/img/logo-favico.png" type="image/jpg" sizes="32x32" />
+    <link rel="apple-touch-icon" href="assets/img/logo-favico.png" type="image/jpg" sizes="32x32" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="resetBootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Real-time Chat App | {{ title }}</title>
+</head>
+
+<body>
+     <main>
+        <form method="post" action="./test2">
+            <!-- Container principal-->
+            <div class="container-fluid">
+                <!-- ChatBox-->
+                <div class="joinUs">
+                    <div class="row headerChat">
+                        <div class="col-12 bienvenue"><a href="#">Bienvenue</a></div>
+                        <div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 logDiv"><img class="fit-logo" src="assets/img/logo.png" alt="ChatApp">
+                        <div class="row20px"><label for="username">Ton nom d'utilisateur</label>
+                            <input name="username" type="text" placeholder="Ton nom d'utilisateur">
+                        </div>
+
+                        <div class="row20px">
+                            <div class="row20px"><label for="chaine">Choisir ta chaine</label>
+                                <select>
+                                    <option selected>Choisir votre chaine</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="row20px">
+                                <div class="row20px col-12"><label for="avatar">Choisir ton avatar</label>
+                                    <div class="row">
+                                        <div class="col-8 verticalAlign"><select>
+                                                <option selected>Choisir votre avatar</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select></div>
+
+                                        <div class="col-4">
+                                            <div class="row20px"><img class="fit-pictureLui" src="assets/img/lui.png"
+                                                    alt="Julie">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <!-- Fin form-->
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-secondary" type="submit">Envoyer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Container principal-->
+
+                </div>
+                </div>
+                </form>
+                </main>
+</body>
+
+
+    <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="assets/js/client.js"></script>
+</body>
+</html>

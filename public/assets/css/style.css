@@ -1,0 +1,346 @@
+/* Visualiser ma construction */
+/* div {
+    border: 1px black solid;
+} */
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.verticalAlign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html,
+body {
+  font-family: "arial", sans-serif;
+  background-image: url("../img/motif.jpg");
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.chatBox {
+  background: #f0f0f0;
+  background: linear-gradient(
+    360deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(236, 239, 241, 1) 100%
+  );
+  margin: 50px 25px 25px 25px;
+  padding: 0 0 25px 0;
+  box-shadow: 4px 4px 4px 0px rgba(146, 104, 104, 0.2);
+  border-radius: 8px;
+}
+
+.membreEnLigne {
+  background-color: slateblue;
+}
+
+.fit-logo {
+  height: 80px;
+  width: 120px;
+  background-color: #7cfc00;
+}
+
+.logo {
+  text-align: left;
+}
+
+nav {
+  font-size: 14px;
+  text-align: right;
+}
+
+nav a {
+  color: white;
+}
+
+ul,
+li {
+  display: inline;
+}
+
+.verticalAlign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinUs {
+  background: #f0f0f0;
+  background: linear-gradient(
+    360deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(236, 239, 241, 1) 100%
+  );
+  margin: 25px;
+  box-shadow: 4px 4px 4px 0px rgba(146, 104, 104, 0.2);
+  width: 370px;
+  border-radius: 8px;
+}
+
+.logDiv {
+  padding: 25px;
+}
+
+.headerChat {
+  background-color: white;
+}
+
+header {
+  height: 40px;
+  text-align: center;
+  background-color: #24a4e4;
+  border-bottom: #206e96 1px solid;
+  font-size: 12px;
+  color: white;
+  line-height: 40px;
+  height: 80px;
+}
+
+footer {
+  height: 40px;
+  text-align: center;
+  background-color: #24a4e4;
+  border-top: #206e96 1px solid;
+  font-size: 12px;
+  color: white;
+  line-height: 40px;
+}
+
+.pictoEd {
+  padding: 0 10px 0 10px;
+}
+
+.row20px {
+  padding: 10px 0 10px 0;
+  text-align: left;
+}
+
+.headerBurger {
+  background-color: white;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  padding-top: 14px;
+}
+
+.chating {
+  padding: 1px 4px;
+  border-radius: 2px;
+  color: #24a4e4;
+  font-size: 18px;
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.onLine {
+  height: 50px;
+  color: black;
+  background-color: white;
+  line-height: 50px;
+}
+
+.sepLine {
+  margin: 0 4px 0 4px;
+  color: #f0f0f0;
+}
+
+.posts {
+  margin: 20px 20px;
+}
+
+.fit-pictureMoi,
+.fit-pictureLui {
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  position: relative;
+  box-shadow: 4px 4px 4px 0px rgba(146, 104, 104, 0.2);
+}
+
+.fit-pictureTeam {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  position: relative;
+  box-shadow: 4px 4px 4px 0px rgba(146, 104, 104, 0.2);
+}
+
+.post1 {
+  background-color: #24a4e4;
+  padding-top: 4px;
+  font-style: italic;
+  font-size: 11px;
+  text-align: right;
+  color: black;
+  border-radius: 4px;
+}
+
+.post2 {
+  background-color: #7cfc00;
+  padding-top: 4px;
+  font-style: italic;
+  font-size: 11px;
+  text-align: left;
+  color: black;
+  border-radius: 4px;
+}
+
+.arrow1 {
+  background-image: url("../img/arrow1.png");
+  background-repeat: no-repeat;
+  background-position: top 10px left;
+}
+
+.arrow2 {
+  background-image: url("../img/arrow2.png");
+  background-repeat: no-repeat;
+  background-position: top 10px right;
+}
+
+.separator {
+  height: 20px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.pictoB {
+  width: 34px;
+  padding: 18px 10px 0 10px;
+}
+
+.serB {
+  padding: 0 20px 0 20px;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.postedMoi,
+.postedLui {
+  font-style: italic;
+  font-size: 11px;
+  color: grey;
+}
+
+.posted {
+  display: block;
+  margin: 2px 2px;
+  border-top: solid 1px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px -1px 0px 0px rgba(150, 93, 93, 0.4);
+  color: #373c41;
+}
+
+.bienvenue {
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+input,
+select,
+textarea {
+  border-radius: 4px;
+  border-color: #24a4e4;
+  background-color: white;
+  width: 100%;
+  height: 32px;
+  font-size: 12px;
+  font-style: italic;
+  color: black;
+}
+
+select {
+  background-color: white;
+}
+
+/* Hover quand selection de select */
+select:hover {
+  background-color: #cfe4ee;
+}
+
+/* Hover sur bouton */
+.btn-outline-secondary:hover {
+  background-color: #176e99;
+}
+
+label {
+  text-align: left;
+  font-size: 12px;
+  color: black;
+  font-style: italic;
+  color: #176e99;
+}
+
+.btn-outline-secondary {
+  background-color: #24a4e4;
+  border-color: #e0d7d7;
+  width: 100%;
+  font-size: 12px;
+  font-style: italic;
+  color: white;
+}
+
+.icones {
+  height: 50px;
+  text-align: left;
+  box-shadow: inset 0px 10px 5px 0px rgba(0, 0, 0, 0.09);
+}
+
+i {
+  padding: 0 0 0 30px;
+  color: #24a4e4;
+  font-size: 18px;
+}
+
+.rooms,
+.team {
+  /* background-color: tomato; */
+  padding: 20px;
+  color: #24a4e4;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.member,
+.nomPrenom {
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-size: 12px;
+  font-style: italic;
+}
+
+hr {
+  border-color: white;
+  box-shadow: 0px -1px 0px 0px rgba(128, 128, 128, 0.6);
+}
+/* 
+.chatRoom {
+    order: 1;
+}
+
+@media screen and (min-width: 768px) {
+
+    .team {
+        order: 1;
+    }
+
+    .chatRoom {
+        order: 0;
+
+    }
+
+    .rooms {
+        order: -1;
+    } */
