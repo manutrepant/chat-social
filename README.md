@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Chat SocialApp
 ## Objectifs :
 Exercice d'apprentissage de différentes technologies et intégration d'un chat en temps réel.
